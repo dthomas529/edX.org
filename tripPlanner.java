@@ -1,4 +1,5 @@
 /* Interactive app for user to input desired travel destination, length of stay, and budget.  Program outputs cost of stay in the currency of destination.*/
+/* Methods are used to build program.*/
 
 import java.util.Scanner;
 
@@ -10,6 +11,8 @@ public class  tripPlanner{
         TravelTimeBudget();
         
     }  
+	
+	/* Get user's name and desired destination.*/
     public static void Greeting() {
         System.out.println("What is your name?");
         String name = input.nextLine();
@@ -18,6 +21,9 @@ public class  tripPlanner{
         String destination = input.nextLine();
         System.out.println("Fanastic!  " + destination + " is a wonderful place to visit.");
      }
+	
+	/*Get length of desired stay, budget for stay, and return total cost in currency of destination.*/
+	
      public static void TravelTimeBudget() {
     System.out.println("How many days are you planning to stay in" + destination + "?");
     int days = input.nextInt();
